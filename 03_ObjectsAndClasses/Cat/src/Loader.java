@@ -1,6 +1,7 @@
 
 public class Loader
 {
+    //проверка
     public static void main(String[] args)
     {
         Cat cat = new Cat();

@@ -1,6 +1,7 @@
 
 public class Cat
 {
+    //проверка
     private double originWeight;
     private double weight;
 
