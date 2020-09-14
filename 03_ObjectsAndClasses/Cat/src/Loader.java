@@ -1,11 +1,30 @@
 
 public class Loader
 {
-    //проверка
     public static void main(String[] args)
     {
-        Cat cat = new Cat();
+        Cat murka = new Cat();
+        System.out.println ("Murka weight: " + murka.getWeight());
 
-        System.out.println(cat.getStatus());
+       murka.meow();
+       System.out.println("Murka weight: " + murka.getWeight());
+
+        Cat sima = new Cat();
+        System.out.println("Sima weight: " + sima.getWeight());
+        sima.drink(3.5);
+        System.out.println("Sima weight: " + sima.getWeight() + ". " + "Cat " + sima.getStatus());
+
+        Cat asia = new Cat();
+        System.out.println("Asia weight: " + asia.getWeight());
+
+        asia.feed(4.8);
+        System.out.println("Asia weight: " + asia.getWeight() + ". " + "Cat " + asia.getStatus());
+
+        Cat laska = new Cat();
+        System.out.println("Laska weight: " + laska.getWeight() + ". " + "Cat " + laska.getStatus());
+
+        Cat barsik = new Cat();
+        System.out.println("Barsik weight: " + barsik.getWeight());
+
     }
-}
+        }
