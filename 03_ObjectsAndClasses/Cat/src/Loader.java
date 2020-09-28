@@ -11,14 +11,16 @@ public class Loader
 
         Cat sima = new Cat();
         System.out.println("Sima weight: " + sima.getWeight());
-        sima.drink(3.5);
+        sima.drink(3,5);
         System.out.println("Sima weight: " + sima.getWeight() + ". " + "Cat " + sima.getStatus());
 
         Cat asia = new Cat();
         System.out.println("Asia weight: " + asia.getWeight());
 
-        asia.feed(4.8);
-        System.out.println("Asia weight: " + asia.getWeight() + ". " + "Cat " + asia.getStatus());
+        asia.isAlive();
+
+        asia.feed(100);
+                System.out.println("Asia weight: " + asia.isWeightNormal() + ". " + "Cat " + asia.getStatus());
 
         Cat laska = new Cat();
         System.out.println("Laska weight: " + laska.getWeight() + ". " + "Cat " + laska.getStatus());

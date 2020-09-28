@@ -1,21 +1,18 @@
 
 public class Cat
 {
-    //проверка
     private double originWeight;
     private double weight;
 
     private double minWeight;
     private double maxWeight;
-    boolean isAlive = true;
 
-    public Cat()
+        public Cat()
     {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
-
     }
 
     public void meow()
@@ -29,12 +26,6 @@ public class Cat
         weight = weight + amount;
     }
 
-    public boolean isWeightNormal() {return (weight > minWeight && weight < maxWeight);}
-
-   public boolean isAlive()
-   { if (isWeightNormal() && )};
-
-
     public void drink(Double amount)
     {
         weight = weight + amount;
@@ -45,7 +36,7 @@ public class Cat
         return weight;
     }
 
-        public String getStatus()
+    public String getStatus()
     {
         if(weight < minWeight) {
             return "Dead";
@@ -60,4 +51,6 @@ public class Cat
             return "Playing";
         }
     }
-}
+
+
+    }
