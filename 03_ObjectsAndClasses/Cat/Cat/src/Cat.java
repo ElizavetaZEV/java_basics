@@ -7,12 +7,13 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
-        public Cat()
+    public Cat()
     {
         weight = 1500.0 + 3000.0 * Math.random();
         originWeight = weight;
         minWeight = 1000.0;
         maxWeight = 9000.0;
+
     }
 
     public void meow()
@@ -51,6 +52,4 @@ public class Cat
             return "Playing";
         }
     }
-
-
-    }
+}
