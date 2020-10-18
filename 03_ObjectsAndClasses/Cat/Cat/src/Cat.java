@@ -16,6 +16,12 @@ public class Cat
 
     }
 
+    void eat(){
+        weight = weight + 150;
+        System.out.println("Feed: 150.00 gr.");
+        return;
+    }
+
     public void meow()
     {
         weight = weight - 1;
@@ -51,5 +57,9 @@ public class Cat
         else {
             return "Playing";
         }
+
     }
-}
+    public void pee(){
+        weight = weight - (getWeight()/100);
+        System.out.println("Meeow,meeow");}
+    }

@@ -22,5 +22,19 @@ public class Loader
         }
         System.out.println(murka.getStatus());
 
+        Cat barsik = new Cat();
+
+        System.out.println("Barsik weight: " + barsik.getWeight());
+
+        barsik.eat();
+        System.out.println("Barsik weight: " + barsik.getWeight());
+
+        for (int i = 100;  i < 150;i = i + 25){
+            barsik.pee();}
+        System.out.println("Barsik weight: " + barsik.getWeight());
+
+
+
+
     }
 }
