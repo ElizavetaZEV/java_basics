@@ -9,11 +9,13 @@ public class Cat
 
     public static int count = 0;
 
-    public boolean isAlive = true;
+    public boolean isAlive = true;{
+        if (isWeightNormal());
+}
     
     public boolean isWeightNormal()
     {
-        return (weight <= minWeight && weight <= maxWeight);
+        return (weight > minWeight && weight < maxWeight);
     }
 
     public Cat()
@@ -30,6 +32,7 @@ public class Cat
     }
 
     void eat(){
+        if(isAlive);
         weight = weight + 150;
         System.out.println("Feed: 150.00 gr.");
         return;
@@ -37,16 +40,19 @@ public class Cat
 
     public void meow()
     {
+        if(isAlive);
         weight = weight - 1;
         System.out.println("Meow");
             }
 
     public void feed(Double amount){
+        if(isAlive);
         weight = weight + amount;
     }
 
     public void drink(Double amount)
     {
+        if(isAlive);
         weight = weight + amount;
     }
 
@@ -58,9 +64,11 @@ public class Cat
     public String getStatus()
     {
         if(weight < minWeight) {
+            count--;
             return "Dead";
                    }
         else if(weight > maxWeight) {
+            count--;
             return "Exploded";
         }
         else if(weight > originWeight) {
@@ -71,6 +79,7 @@ public class Cat
         }
     }
     public void pee(){
+        if(isAlive);
         weight = weight - (getWeight()/100);
-        System.out.println("Meeow,meeow");}
+                System.out.println("Meeow,meeow");}
     }
