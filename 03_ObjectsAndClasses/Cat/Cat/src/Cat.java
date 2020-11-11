@@ -38,31 +38,36 @@ public class Cat
 
     public void meow()
     {
-        if(isAlive);
+        if(isAlive);{
         weight = weight - 1;
         System.out.println("Meow");
-        if(!isWeightNormal()){
+
+        if(!isWeightNormal()) {
             count--;
-           System.out.println("Котика нет с нами");
+            System.out.println("Котика нет с нами");
         }
-                    }
+        }
+    }
 
     public void feed(Double amount){
-        if(isAlive);
-        weight = weight + amount;
-        if(!isWeightNormal()){
-        count--;
-            System.out.println("Котика нет с нами");
+        if(isAlive); {
+            weight = weight + amount;
+            if (!isWeightNormal()) {
+                count--;
+                System.out.println("Котика нет с нами");
+            }
         }
     }
 
     public void drink(Double amount)
     {
         if(isAlive);
-        weight = weight + amount;
-        if(!isWeightNormal()){
-        count--;
-            System.out.println("Котика нет с нами");
+        {
+            weight = weight + amount;
+            if (!isWeightNormal()) {
+                count--;
+                System.out.println("Котика нет с нами");
+            }
         }
     }
 
