@@ -1,6 +1,6 @@
 
 public class Loader
-{
+    {
     public static void main(String[] args)
     {
         Cat asia = new Cat();
@@ -17,8 +17,6 @@ public class Loader
         }
         System.out.println("Sima weight: " + sima.getWeight() + ". " + sima.getStatus() + ".");
 
-
-
         Cat murka = new Cat();
         System.out.println("Number of cats: " + murka.getCount());
         System.out.println("Murka weight: " + murka.getWeight() + ". " + murka.getStatus() + ".");
@@ -27,7 +25,6 @@ public class Loader
         }
         System.out.println("Murka weight: " + murka.getWeight() + ". " + murka.getStatus() + ".");
         System.out.println("Number of cats: " + murka.getCount());
-
 
         Cat barsik = new Cat();
         System.out.println("Number of cats: " + barsik.getCount());
@@ -38,13 +35,11 @@ public class Loader
             barsik.pee();}
         System.out.println("Barsik weight: " + barsik.getWeight() + ". " + barsik.getStatus() + ".");
 
-
         Cat lamia = new Cat();
         System.out.println("Number of cats: " + lamia.getCount());
         System.out.println("Lamia weight: " + lamia.getWeight());
         lamia.eat();
         System.out.println("Lamia weight: " + lamia.getWeight() + ". " + lamia.getStatus() + ".");
-
 
         Cat baksik = new Cat();
         System.out.println("Number of cats: " + baksik.getCount() + ".");
@@ -56,8 +51,13 @@ public class Loader
         System.out.println("Baksik weight: " + baksik.getWeight() + ". " + baksik.getStatus() + ".");
         System.out.println("Number of cats: " + baksik.getCount() + ".");
 
+        Cat tom = new Cat ("Том");
+        System.out.println(tom.getKitten());
 
 
-
+    }
+    public static Cat getKitten(){
+        double weight = 100 + 100 * Math.random();
+        return new Cat();
     }
 }

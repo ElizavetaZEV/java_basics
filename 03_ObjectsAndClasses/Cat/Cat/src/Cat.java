@@ -7,6 +7,10 @@ public class Cat
     private double minWeight;
     private double maxWeight;
 
+    public static final int LEGS_COUNT = 4;
+    public static final double MAX_WEIGHT = 9000.0;
+    public static final double MIN_WEIGHT = 1000.0;
+
     public static int count = 0;
 
     public boolean isAlive = true; {     if (isWeightNormal());    }
