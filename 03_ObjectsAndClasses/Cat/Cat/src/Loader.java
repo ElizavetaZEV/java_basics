@@ -51,11 +51,10 @@ public class Loader
         System.out.println("Baksik weight: " + baksik.getWeight() + ". " + baksik.getStatus() + ".");
         System.out.println("Number of cats: " + baksik.getCount() + ".");
 
-        Cat tom = new Cat ("Том");
+        Cat newCat = getKitten ();
         System.out.println(tom.getKitten());
-
-
     }
+    
     public static Cat getKitten(){
         double weight = 100 + 100 * Math.random();
         return new Cat();

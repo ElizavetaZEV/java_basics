@@ -1,6 +1,15 @@
 
 public class Cat
 {
+    private boolean colorCat;
+
+    public boolean isColorCat() {
+        return colorCat;
+    }
+
+    public boolean hasColorCat() {
+        this.colorCat = colorCat;}
+
     private double originWeight;
     private double weight;
 

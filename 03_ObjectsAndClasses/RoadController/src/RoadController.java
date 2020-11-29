@@ -6,12 +6,55 @@ import java.util.Scanner;
 public class RoadController
 {
     private static double passengerCarMaxWeight = 3500.0; // kg
+    public void setPassengerCarMaxWeight (double d){
+        passengerCarMaxWeight = d;
+    }
+    public void getPassengerCarMaxWeight (){
+        return passengerCarMaxWeight;
+    }
+
     private static int passengerCarMaxHeight = 2000; // mm
+    public int setPassengerCarMaxHeight (int i){
+        passengerCarMaxHeight = i;
+    }
+    public int getPassengerCarMaxHeight (){
+        return passengerCarMaxHeight;
+    }
+
     private static int controllerMaxHeight = 4000; // mm
+    public int setControllerMaxHeight (int i1){
+        controllerMaxHeight = i1;
+    }
+    public static int getControllerMaxHeight() {
+        return controllerMaxHeight;
+    }
 
     private static int passengerCarPrice = 100; // RUB
+    public static void setPassengerCarPrice(int passengerCarPrice) {
+        RoadController.passengerCarPrice = passengerCarPrice;
+    }
+    public static int getPassengerCarPrice() {
+        return passengerCarPrice;
+    }
+
     private static int cargoCarPrice = 250; // RUB
+    public static int getCargoCarPrice() {
+        return cargoCarPrice;
+    }
+    public static void setCargoCarPrice(int cargoCarPrice) {
+        RoadController.cargoCarPrice = cargoCarPrice;
+    }
+
     private static int vehicleAdditionalPrice = 200; // RUB
+
+    public static void setVehicleAdditionalPrice(int vehicleAdditionalPrice) {
+        RoadController.vehicleAdditionalPrice = vehicleAdditionalPrice;
+    }
+
+    public static int getVehicleAdditionalPrice() {
+        return vehicleAdditionalPrice;
+    }
+
 
     public static void main(String[] args)
     {
