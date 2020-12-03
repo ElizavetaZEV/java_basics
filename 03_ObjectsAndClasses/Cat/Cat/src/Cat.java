@@ -1,14 +1,13 @@
 
 public class Cat
 {
-    private boolean colorCat;
+    private String color;
 
-    public boolean isColorCat() {
-        return colorCat;
+    public String getColor() {
+        return color;
     }
-
-    public boolean hasColorCat() {
-        this.colorCat = colorCat;}
+    public void setColor() {
+       this.color = color;}
 
     private double originWeight;
     private double weight;
