@@ -6,8 +6,8 @@ public class Cat
     public String getColor() {
         return color;
     }
-    public void setColor() {
-       this.color = color;}
+    public void setColor (String color) {
+       this.color = color.BLACK; }
 
     private double originWeight;
     private double weight;
