@@ -1,13 +1,13 @@
 
 public class Cat
 {
-    private String color;
+    private Color color;
 
-    public String getColor() {
+    public Color getColor() {
         return color;
     }
-    public void setColor (String color) {
-       this.color = color.BLACK; }
+    public void setColor () {
+       Color color = Color.BLACK; }
 
     private double originWeight;
     private double weight;
