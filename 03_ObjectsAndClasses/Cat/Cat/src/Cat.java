@@ -7,7 +7,7 @@ public class Cat
         return color;
     }
     public void setColor () {
-       Color color = Color.BLACK; }
+       this. color = Color.BLACK; }
 
     private double originWeight;
     private double weight;
