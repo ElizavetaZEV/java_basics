@@ -62,4 +62,6 @@ public class Loader
         double weight = 100 + 100 * Math.random();
         return new Cat();
     }
+
+    
 }

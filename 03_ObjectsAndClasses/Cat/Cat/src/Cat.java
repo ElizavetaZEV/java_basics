@@ -30,12 +30,26 @@ public class Cat
 
     public Cat()
     {
-        weight = 1500.0 + 3000.0 * Math.random();
-        originWeight = weight;
-        minWeight = 1000.0;
-        maxWeight = 9000.0;
+        this(1500.0 + 3000.0 * Math.random());
+    }
+
+        public Cat(double weight)
+        {
+        this(weight, weight, 1000.0, 9000.0);
+        }
+        public Cat (double weight, double originWeight, double minWeight, double maxWeight)
+        {
+        this.weight = weight;
+        this.originWeight = originWeight;
+        this.minWeight = minWeight;
+        this.maxWeight = maxWeight;
         count++;
     }
+    public Cat copy()
+    {
+        return new Cat();
+    }
+
 
     public static int getCount() {
         return count;
