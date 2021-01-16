@@ -63,5 +63,10 @@ public class Loader
         return new Cat();
     }
 
-    
+        Cat kote = new Cat ();
+    kote.setName ("КотЭ");
+        Cat copyCat = new Cat (kote);
+
+    System.out.println(kote.getName);
+    System.out.println();
 }

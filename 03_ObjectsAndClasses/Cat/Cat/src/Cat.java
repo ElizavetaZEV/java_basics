@@ -1,6 +1,24 @@
 
 public class Cat
 {
+    private String name;
+    public String getName(){
+        return name;
+    }
+    public void setName(String name){
+        this.name = name;
+    }
+    public Cat (String name, double weight){
+        this.name = name;
+        this.weight = weight;
+    }
+
+    ///конструктор копии
+    public Cat (Cat other){
+        this(other.getName(), other.getWeight());
+    }
+
+
     private Color color;
 
     public Color getColor() {
@@ -11,6 +29,14 @@ public class Cat
 
     private double originWeight;
     private double weight;
+
+    public Double getWeight()
+    {
+        return weight;
+    }
+    public void setWeight(double weight){
+        this.weight = weight;
+    }
 
     private double minWeight;
     private double maxWeight;
@@ -28,28 +54,14 @@ public class Cat
         return (weight > minWeight && weight < maxWeight);
     }
 
-    public Cat()
-    {
-        this(1500.0 + 3000.0 * Math.random());
-    }
-
-        public Cat(double weight)
-        {
-        this(weight, weight, 1000.0, 9000.0);
-        }
-        public Cat (double weight, double originWeight, double minWeight, double maxWeight)
-        {
-        this.weight = weight;
-        this.originWeight = originWeight;
-        this.minWeight = minWeight;
-        this.maxWeight = maxWeight;
+public Cat()
+{
+        weight = 1500.0 + 3000.0 * Math.random();
+        originWeight = weight;
+        minWeight = 1000.0;
+        maxWeight = 9000.0;
         count++;
     }
-    public Cat copy()
-    {
-        return new Cat();
-    }
-
 
     public static int getCount() {
         return count;
@@ -95,11 +107,6 @@ public class Cat
                 System.out.println("Котика нет с нами");
             }
         }
-    }
-
-    public Double getWeight()
-    {
-        return weight;
     }
 
     public String getStatus()
