@@ -8,17 +8,6 @@ public class Cat
     public void setName(String name){
         this.name = name;
     }
-    public Cat (String name, double weight){
-        this.name = name;
-        this.weight = weight;
-    }
-
-    ///конструктор копии
-    public Cat (Cat other){
-        this(other.getName(), other.getWeight());
-    }
-
-
     private Color color;
 
     public Color getColor() {
@@ -28,6 +17,14 @@ public class Cat
        this.color = Color.BLACK; }
 
     private double originWeight;
+
+    public double getOriginWeight() {
+        return originWeight;
+    }
+    public void setOriginWeight(double originWeight) {
+        this.originWeight = originWeight;
+    }
+
     private double weight;
 
     public Double getWeight()
@@ -39,7 +36,20 @@ public class Cat
     }
 
     private double minWeight;
+    public double getMinWeight() {
+        return minWeight;
+    }
+    public void setMinWeight(double minWeight) {
+        this.minWeight = minWeight;
+    }
+
     private double maxWeight;
+    public double getMaxWeight() {
+        return maxWeight;
+    }
+    public void setMaxWeight() {
+        this.maxWeight = maxWeight;
+    }
 
     public static final int LEGS_COUNT = 4;
     public static final double MAX_WEIGHT = 9000.0;
@@ -61,6 +71,20 @@ public Cat()
         minWeight = 1000.0;
         maxWeight = 9000.0;
         count++;
+    }
+    public Cat (String name, double weight, Color color, double originWeight, double minWeight, double maxWeight){
+        this.name = name;
+        this.weight = weight;
+        this.color = color;
+        this.originWeight = originWeight;
+        this.minWeight = minWeight;
+        this.maxWeight = maxWeight;
+    }
+
+    ///конструктор копии
+    public Cat (Cat other){
+        this(other.getName(), other.getWeight(), other.getColor(),
+                other.getOriginWeight(), other.getMinWeight(), other.getMinWeight());
     }
 
     public static int getCount() {
