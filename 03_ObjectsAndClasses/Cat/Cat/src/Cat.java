@@ -1,6 +1,8 @@
 
 public class Cat
 {
+    public String toString;
+
     private String name;
     public String getName(){
         return name;
@@ -152,7 +154,10 @@ public Cat()
         if(isAlive);
         weight = weight - (getWeight()/100);
                 System.out.println("Meeow,meeow");
+    }
+
+            @Override
+            public String toString(){
+        return ("Cat: "+ name + ". " + "weight: " + weight + ". " + "color: " + color);
             }
-
-
     }
