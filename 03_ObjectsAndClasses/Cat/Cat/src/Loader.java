@@ -60,6 +60,6 @@ public class Loader {
         kote.setColor();
         System.out.println(kote);
         Cat copyCat = new Cat(kote);
-        System.out.println(copyCat.toString);
+        System.out.println(copyCat.toString());
     }
 }

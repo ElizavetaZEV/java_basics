@@ -1,8 +1,6 @@
 
 public class Cat
 {
-    public String toString;
-
     private String name;
     public String getName(){
         return name;
@@ -158,6 +156,6 @@ public Cat()
 
             @Override
             public String toString(){
-        return ("Cat: "+ name + ". " + "weight: " + weight + ". " + "color: " + color);
+        return ("Cat: "+ name + ". " + "Weight: " + weight + ". " + "Color: " + color);
             }
     }
