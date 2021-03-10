@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Cat2:jar">
+    <output-path>$PROJECT_DIR$/out/production/Cat2</output-path>
+    <root id="archive" name="Cat2.jar">
+      <element id="module-output" name="Cat2" />
+    </root>
+  </artifact>
+</component>
