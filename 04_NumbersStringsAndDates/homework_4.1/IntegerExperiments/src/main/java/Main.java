@@ -21,6 +21,7 @@ public class Main {
   public static int sumDigits(Integer number) {
     //@TODO: write code here and delete TODO line
 
+
     Object object = null;
     String objectString = String.valueOf(object);
     System.out.println(objectString);
