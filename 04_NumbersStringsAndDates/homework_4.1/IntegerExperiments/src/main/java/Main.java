@@ -1,5 +1,5 @@
 public class Main {
-
+/// проверка для гита
   public static void main(String[] args) {
     Container container = new Container();
     container.count += 7843;
