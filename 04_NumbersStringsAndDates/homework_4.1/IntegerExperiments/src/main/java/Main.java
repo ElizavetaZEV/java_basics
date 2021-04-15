@@ -26,30 +26,12 @@ public class Main {
         String objectString = String.valueOf(object);
         System.out.println(objectString);
 
-        String[] chislo = String.valueOf(12345).split("");
+        String[] chislo = String.valueOf(number).split("");
         int result = 0;
         for (int i = 0; i < chislo.length; i++) {
             result += Integer.parseInt(chislo[i]);
         }
         return result;
-
-//_____________________________________________
-        String text = "12345";
-        Integer number1 = Integer.parseInt(text);
-        System.out.println(number1);
-        number = number1 + 5;
-        System.out.println(number);
-        System.out.println(text + "000");
-
-
-        //_______________________________________________
-        //String charAt
-        String string = "12345";
-        Character character = string.charAt(0);
-        int index = 1;
-        System.out.println(character);
-        System.out.println(index);
-
 
     }
 }
