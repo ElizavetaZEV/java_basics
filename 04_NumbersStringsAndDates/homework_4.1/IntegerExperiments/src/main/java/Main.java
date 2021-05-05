@@ -23,8 +23,13 @@ public class Main {
 
 
         Object object = null;
-        String objectString = String.valueOf(object);
-        System.out.println(objectString);
+        if (object instanceof Object){
+            System.out.println(object);
+        }else{
+            String objectString = String.valueOf(object);
+            System.out.println(objectString);
+        }
+
 
         String[] chislo = String.valueOf(number).split("");
         int result = 0;
