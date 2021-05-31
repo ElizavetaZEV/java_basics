@@ -21,14 +21,15 @@ public class Main {
     public static int sumDigits(Integer number) {
         //@TODO: write code here and delete TODO line
 
+        //проверка
+        if (number == null){
+            return -1;
+        }
 
         Object object = null;
-        if (object instanceof Object){
-            System.out.println(object);
-        }else{
-            String objectString = String.valueOf(object);
+                    String objectString = String.valueOf(object);
             System.out.println(objectString);
-        }
+
 
 
         String[] chislo = String.valueOf(number).split("");
@@ -37,6 +38,8 @@ public class Main {
             result += Integer.parseInt(chislo[i]);
         }
         return result;
+
+        //дополнительное задание
 
     }
 }
