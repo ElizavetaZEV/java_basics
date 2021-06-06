@@ -32,20 +32,19 @@ public class Main {
 
 
 
-       // String[] chislo = String.valueOf(number).split("");
-       // int result = 0;
-        //for (int i = 0; i < chislo.length; i++) {
-        //    result += Integer.parseInt(chislo[i]);
-       // }
-        //return result;
+       String[] chislo = String.valueOf(number).split("");
+       int result = 0;
+        for (int i = 0; i < chislo.length; i++) {
+            result += Integer.parseInt(chislo[i]);
+        }
+        return result;
 
         //дополнительное задание
-        Integer sum = 0;
-        String string = String.valueOf(number);
-        for (int i1 = 0; i1 < string.length(); i1++){
-            sum += Integer.parseInt(String.valueOf(string.charAt(i1)));
-        }
-        return sum;
+        char c = 12345;
+        int i1 = Character.getNumericValue(c);
+        System.out.println(i1);
+        return number;
+
 
     }
 }
