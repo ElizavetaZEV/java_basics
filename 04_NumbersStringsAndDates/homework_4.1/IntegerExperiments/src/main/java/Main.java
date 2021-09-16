@@ -30,21 +30,18 @@ public class Main {
                     String objectString = String.valueOf(object);
             System.out.println(objectString);
 
-
-
-       String[] chislo = String.valueOf(number).split("");
-       int result = 0;
-        for (int i = 0; i < chislo.length; i++) {
-            result += Integer.parseInt(chislo[i]);
-        }
+            String[] chislo = String.valueOf(number).split("");
+            int result = 0;
+            for (int i = 0; i < chislo.length; i++) {
+            result += Character.getNumericValue(i);
+            }
         return result;
-
-        //дополнительное задание
-        char c = 12345;
-        int i1 = Character.getNumericValue(c);
-        System.out.println(i1);
-        return number;
-
 
     }
 }
+//  String[] chislo = String.valueOf(number).split("");
+// int result = 0;
+// for (int i = 0; i < chislo.length; i++) {
+//     result += Integer.parseInt(chislo[i]);
+//  }
+//  return result;
