@@ -27,21 +27,16 @@ public class Main {
         }
 
         Object object = null;
-                    String objectString = String.valueOf(object);
+        String objectString = String.valueOf(object);
             System.out.println(objectString);
 
+
             String[] chislo = String.valueOf(number).split("");
-            int result = 0;
-            for (int i = 0; i < chislo.length; i++) {
+           int result = 0;
+            for (int i = 0; i <= chislo.length; i++) {
             result += Character.getNumericValue(i);
             }
-        return result;
+          return result;
 
     }
 }
-//  String[] chislo = String.valueOf(number).split("");
-// int result = 0;
-// for (int i = 0; i < chislo.length; i++) {
-//     result += Integer.parseInt(chislo[i]);
-//  }
-//  return result;
