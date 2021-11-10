@@ -11,7 +11,7 @@ public class Main {
         char c1 = (char) i1;
         System.out.println(i1 + " / " + c1);
 
-        for (int i = 1040;   i < 1104;  i++){
+        for (int i = 1040; i < 1104; i++) {
             char c = (char) i;
             System.out.println(i + " / " + c);
         }
@@ -36,18 +36,12 @@ public class Main {
         }
 
         Object object = null;
-        String objectString = String.valueOf(object);
-        System.out.println(objectString);
-
-
-        String[] chislo = String.valueOf(number).split("");
+        String chislo = String.valueOf(number);
         int result = 0;
-        for (int i = 0; i <= chislo.length; i++) {
-            result += Character.getNumericValue(i);
+        for (int i = 0; i <= chislo.length() - 1; i++) {
+            result += Character.getNumericValue(chislo.charAt(i));
         }
         return result;
-
-
 
 
     }
